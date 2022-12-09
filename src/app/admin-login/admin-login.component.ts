@@ -22,6 +22,8 @@ export class AdminLoginComponent {
           this.router.navigate(['/dash'])
       } else {
           alert("invalid credentials")
+          this.password=""
+          this.username=""
       }
     }
   

@@ -10,7 +10,6 @@ import { ApiService } from '../api.service';
 export class UserLoginComponent {
   email=""
   password=""
- 
 searchUser:any=[]
 constructor(private api:ApiService,private router:Router){}
   readValue=()=>

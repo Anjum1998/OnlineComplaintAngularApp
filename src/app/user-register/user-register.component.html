@@ -1,4 +1,4 @@
-<app-navbar></app-navbar>
+
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -26,7 +26,7 @@
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
                     <label for="" class="form-label">Address</label>
-                    <textarea name="address" [(ngModel)]="address" id=""  rows="5" class =form-control></textarea>
+                    <textarea name="address" [(ngModel)]="address" id=""  rows="3" class =form-control></textarea>
 
                 </div>
             
@@ -38,7 +38,7 @@
                     <input name="phone" [(ngModel)]="phone"  type="text" class="form-control">
 
                 </div>
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <div class="col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     <label for="" class="form-label">User Name</label>
                     <input name="username" [(ngModel)]="username" type="text" class="form-control">
@@ -56,15 +56,14 @@
                     <input name="confirm" [(ngModel)]="confirm" type="password" name="" id="" class="form-control">
 
                 </div>
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
 
                     <button (click)="readValue()" class="btn btn-primary">Register</button>
 
                 </div>
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
 
-                    <a routerLink="/userlogin" class="btn btn-secondary">Back to user login</a>
-
+                    <a routerLink="/userlogin" >Back to user login</a>
                 </div>
 
             </div>
