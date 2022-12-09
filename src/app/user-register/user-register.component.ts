@@ -8,7 +8,6 @@ import { Component } from '@angular/core';
 export class UserRegisterComponent {
   name=""
   address=""
-  dob=""
   email=""
   phone=""
   username=""
@@ -18,7 +17,7 @@ export class UserRegisterComponent {
   {
     let data:any={
   
-      "name":this.name,"address":this.address,"dob":this.dob,"email":this.email,
+      "name":this.name,"address":this.address,"email":this.email,
       "phone":this.phone,"username":this.username,"password":this.password,"confirm":this.confirm
   
     }
