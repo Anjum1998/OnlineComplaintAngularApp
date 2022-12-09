@@ -10,6 +10,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { UserRegisterComponent } from './user-register/user-register.component';
+import { ViewProfileComponent } from './view-profile/view-profile.component';
+import { DashBoardComponent } from './dash-board/dash-board.component';
+import { Navbar2Component } from './navbar2/navbar2.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -22,6 +25,14 @@ const myRoute:Routes=[
   {
     path:"register",
     component:UserRegisterComponent
+  },
+  {
+    path:"view",
+    component:ViewProfileComponent
+  },
+  {
+    path:"dash",
+    component:DashBoardComponent
   }
 ]
 @NgModule({
@@ -30,7 +41,10 @@ const myRoute:Routes=[
     AdminLoginComponent,
     NavbarComponent,
     UserLoginComponent,
-    UserRegisterComponent
+    UserRegisterComponent,
+    ViewProfileComponent,
+    DashBoardComponent,
+    Navbar2Component
   ],
   imports: [
     BrowserModule,
