@@ -13,6 +13,7 @@ import { UserRegisterComponent } from './user-register/user-register.component';
 import { ViewProfileComponent } from './view-profile/view-profile.component';
 import { DashBoardComponent } from './dash-board/dash-board.component';
 import { Navbar2Component } from './navbar2/navbar2.component';
+import { AddComplaintComponent } from './add-complaint/add-complaint.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -33,6 +34,10 @@ const myRoute:Routes=[
   {
     path:"dash",
     component:DashBoardComponent
+  },
+  {
+    path:"addcomplaint",
+    component:AddComplaintComponent
   }
 ]
 @NgModule({
@@ -44,7 +49,8 @@ const myRoute:Routes=[
     UserRegisterComponent,
     ViewProfileComponent,
     DashBoardComponent,
-    Navbar2Component
+    Navbar2Component,
+    AddComplaintComponent
   ],
   imports: [
     BrowserModule,

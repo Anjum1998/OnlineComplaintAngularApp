@@ -11,8 +11,12 @@
             <a class="nav-link active" aria-current="page" routerLink="/view">View Profile</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" routerLink="/addcomplaint">Add Complaints</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" routerLink="/userlogin">Logout</a>
           </li>
+          
           <li class="nav-item">
             <a class="nav-link" routerLink="/view" *ngFor="let i of userdata">Welcome {{i.name}}</a>
           </li>
