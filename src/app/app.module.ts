@@ -14,6 +14,7 @@ import { ViewProfileComponent } from './view-profile/view-profile.component';
 import { DashBoardComponent } from './dash-board/dash-board.component';
 import { Navbar2Component } from './navbar2/navbar2.component';
 import { AddComplaintComponent } from './add-complaint/add-complaint.component';
+import { ViewMyComplaintComponent } from './view-my-complaint/view-my-complaint.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -50,7 +51,8 @@ const myRoute:Routes=[
     ViewProfileComponent,
     DashBoardComponent,
     Navbar2Component,
-    AddComplaintComponent
+    AddComplaintComponent,
+    ViewMyComplaintComponent
   ],
   imports: [
     BrowserModule,
