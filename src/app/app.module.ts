@@ -39,6 +39,10 @@ const myRoute:Routes=[
   {
     path:"addcomplaint",
     component:AddComplaintComponent
+  },
+  {
+    path:"mycomplaint",
+    component:ViewMyComplaintComponent
   }
 ]
 @NgModule({

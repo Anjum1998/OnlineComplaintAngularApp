@@ -1,21 +1,29 @@
 <app-navbar></app-navbar>
 <div class="container">
     <div class="row g-3 m-4">
-        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" *ngFor="let i of data">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
-            <div class="card" >
-                
-                <div class="card-body">
-                  <h5 class="card-title">Name :{{i.name}}</h5>
-                  <p class="card-text">Address: {{i.address}}</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Email:{{i.email}}</li>
-                  <li class="list-group-item">Phone:{{i.phone}}</li>
-                
-                </ul>
-                
-              </div>
+          <table class="table table-bordered border-dark">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Address</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Complaints</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let i of data">
+                <td>{{i.name}}</td>
+                <td>{{i.address}}</td>
+                <td>{{i.email}}</td>
+                <td>{{i.phone}}</td>
+                <td>{{i.complaints}}</td>
+              </tr>
+            </tbody>
+          </table>
+            
 
         </div>
     </div>
