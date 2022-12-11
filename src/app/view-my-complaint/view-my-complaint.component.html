@@ -10,9 +10,9 @@
               </tr>
             </thead>
             <tbody>
-              <tr >
+              <tr *ngFor="let i of data" >
                 <td>
-                 {{data[0].complaints}}
+                 {{i.complaints}}
                 </td>
               </tr>
             </tbody>

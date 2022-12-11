@@ -8,11 +8,12 @@ import { ApiService } from '../api.service';
 })
 export class ViewMyComplaintComponent {
   userId:any=""
+  data:any=[]
   constructor(private api:ApiService){
 
     this.userId=localStorage.getItem("userInfo")
     let data:any={
-      "id":this.userId
+      "userId":this.userId
     }
     this.api.viewMyComplaints(data).subscribe(
       (response:any)=>
@@ -22,7 +23,7 @@ export class ViewMyComplaintComponent {
       }
     )
   }
-  data:any=[]
+  
   
  
 }
