@@ -21,17 +21,19 @@ constructor(private api:ApiService,private router:Router){}
     this.api.addLogin(data).subscribe(
       (response:any)=>
       {
+        this.email=""
+        this.password=""
         console.log(response)
-        if (response.length==0) {
-          alert("invalid email or password")
-          this.email=""
-          this.password=""
-        } else {
+        if (response.status=="success") {
           this.searchUser=response; 
           let userId=response.userId
           console.log(userId)
           localStorage.setItem("userInfo",userId)
           this.router.navigate(['/view'])
+          
+        } 
+        else {
+          alert("invalid email or password")
         }
        
        
